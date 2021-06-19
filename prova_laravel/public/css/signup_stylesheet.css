@@ -1,0 +1,188 @@
+html{
+    font-size: 30px;
+}
+@media(max-width:1900px) {
+    html {
+        font-size: 22px;
+    }
+  }
+
+body{
+    background-color: rgb(20, 20, 20);
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:25%;
+    background-color: rgb(0, 0, 0,0.7);
+    border-bottom:solid white 2px;
+    position:relative;
+}
+
+section{
+    position: relative;
+    /*background-color: rgb(0, 0, 0,0.1);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    height:75%;
+}
+#sfondo{
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-image: url(images/signup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+#sfondo2{
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-image: url(images/scacchi.jpg);
+    background-repeat:repeat;
+    z-index: -1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin:15px;
+}
+
+form div{
+    margin-top:30px;
+    margin-right:0px;
+}
+
+label{
+    font-size: 0.9rem;
+}
+
+
+
+#main{
+    display:flex;
+    align-items: center;
+    width:90%;
+    height:90%;
+    justify-content: space-around;
+}
+
+div.dati{
+    position: relative;
+    height: 90%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width:25%;
+    border-radius: 5px;
+    border:3px solid red;
+    background-color: rgba(0, 0, 0, 0.9);
+    color:red;
+}
+
+form div .error{
+    color:red;
+    font-size: 0.6rem;
+    margin:0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.hidden{
+    display:none;
+}
+
+
+#submit{
+    margin-top: 10px;
+    font-size: 0.7rem;
+    }
+
+#conferma{
+    font-size: 0.8rem;
+}
+
+
+#signupSpan{
+    position: absolute;
+    top:30;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-weight: 500;
+}
+
+#title div.line{
+    background-color: white;
+    width:70%;
+    height:3px;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    margin-top:0px;
+    margin-bottom:0px;
+    text-align: center;
+    align-items: center;
+}
+@media(max-width:500px)
+{
+    #title{
+        margin-bottom:0px;
+    }
+}
+
+#title h1{
+    
+    font-size: 2.4rem;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+
+#title p{
+    font-family:'Montserrat', sans-serif;
+    text-transform: lowercase;
+    font-size: 1.3rem;
+    color:red;
+    margin-top: 5px;
+    margin-bottom:18px;
+    letter-spacing: 2px;
+    font-style: italic;
+    line-height: 110%;
+}
+@media(max-width:500px)
+{
+    #title h1{
+        font-size: 2rem;
+    }
+    #title p{
+        font-size: 1.2rem;;
+    }
+}
+
+#accedi{
+    font-size: 0.8rem;
+    color:white;
+}
